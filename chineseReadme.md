@@ -7,10 +7,10 @@ ConvNetJs2 是延續自 [ConvNetJS](https://github.com/karpathy/convnetjs) 的�
 
 範例     | 程式 | 說明 
 --------|-----|--------------------------------
-曲線擬合 | [regression.js] | 用 x*sin(x) 曲線產生一些樣本，然後用 CNN 學習出盡可能符合這些樣本的曲線
-二維分類 | [classified2d.js] | 2維平面上有兩種點，用 CNN 網路將兩種點盡可能區分開來
-數字辨識 | [mnistPredict.js] | MNIST 數字影像資料庫可用來訓練 CNN 網路辨識手寫數字
-影像辨識 | [cifar10predict.js] | Cifar10 影像資料庫共有十類標記物件，用來訓練出 CNN 網路進行辨識 (本範例採用預先訓練好的網路來預測)
+曲線擬合 | [regression.js](regression.js) | 用 x*sin(x) 曲線產生一些樣本，然後用 CNN 學習出盡可能符合這些樣本的曲線
+二維分類 | [classified2d.js](classified2d.js) | 2維平面上有兩種點，用 CNN 網路將兩種點盡可能區分開來
+數字辨識 | [mnist](mnist/) | MNIST 數字影像資料庫可用來訓練 CNN 網路辨識手寫數字
+影像辨識 | [cifar10](cifar10/) | Cifar10 影像資料庫共有十類標記物件，用來訓練出 CNN 網路進行辨識 (本範例採用預先訓練好的網路來預測)
 
 ## 安裝方法
 

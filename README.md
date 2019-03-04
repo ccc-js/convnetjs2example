@@ -2,17 +2,18 @@
 
 Language: [English](README.md) | [中文版](chineseReadme.md)
 
-ConvNetJs2 is a continuation from [ConvNetJS] (https://github.com/karpathy/convnetjs) project!
+ConvNetJs2 is a continuation of [ConvNetJS](https://github.com/karpathy/convnetjs) project!
 
-[ConvNetJS] is [karpathy] (https://github.com/karpathy), written in JavaScript Convolutional Neural networks (Convolutional Neural Network) suite, mainly adopt the way of the web page, function is complete, it shows the example shown in the table below.
+[ConvNetJS] is a JavaScript Convolutional Neural Network project created by [Karpathy](https://github.com/karpathy).
 
+# Examples 
 
 Example | program | description
 --------|-----|--------------------------------
-| [regression. Js] | USES x*sin(x) curve to generate some samples, and then USES CNN to learn the curve that conforms to these samples as far as possible
-For | [classified2d.js], there are two points on the 2-dimensional plane of |. The two points are distinguished as far as possible by CNN network
-The | MNIST digital imaging database can be used to train CNN networks to recognize handwritten Numbers
-| [cifar10predict.js] the | Cifar10 image database contains ten categories of tagged objects that are used to train CNN networks for identification (this example USES pre-trained networks to predict).
+Regression | [regression.js](regression) | USES x*sin(x) curve to generate some samples, and then USES CNN to learn the curve that conforms to these samples as far as possible
+2D-Classification | [classified2d.js](classified2d.js) | there are two points on the 2-dimensional plane. The two points are distinguished as far as possible by CNN network
+MNIST | [mnist](mnist/) | MNIST digital imaging database can be used to train CNN networks to recognize handwritten Numbers
+CiFar10 | [cifar10](cifar10/) | Cifar10 image database contains ten categories of tagged objects that are used to train CNN networks for identification (this example USES pre-trained networks to predict).
 
 ## Installation
 
@@ -23,9 +24,9 @@ $npm -i convnetjs2
 
 Then you may run the following example!
 
-## Examples 
+## Run 
 
-Example: [regression.js] (curve fitting)
+Example: [regression.js](regression.js)  (curve fitting)
 
 Run
 
@@ -91,7 +92,7 @@ x=-1.2591 label=1.1984 predict=1.1957
 ```
 
 
-Example: [classified2d.js] (two-dimensional classification)
+Example: [classified2d.js](classified2d.js) (two-dimensional classification)
 
 Run:
 
@@ -126,7 +127,7 @@ x=0.8000 y=3.2 label=1 w0=0.0092 w1=0.9908
 x=1.0000 y=-2.2 label=1 w0=0.0297 w1=0.9703
 ```
 
-Example: [mnistPredict js] (MNIST Handwritten digit recognition)
+Example: [mnist/mnistPredict.js](mnist/mnistPredict.js) (MNIST Handwritten digit recognition)
 
 Run
 
@@ -160,7 +161,7 @@ prob = {"sx":1,"sy":1,"depth":10,"w":{"0":0.028692523186077575,"1":5.02205736407
 yhat=4 class=4
 ```
 
-Example: [cifar10predict js] (image recognition)
+Example: [cifar10/cifar10predict.js](cifar10/cifar10predict.js) (Image Recognition)
 
 Run
 
