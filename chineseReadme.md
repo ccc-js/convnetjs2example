@@ -1,33 +1,30 @@
-# ConvNetJs2 -- Convolution neural network suite
+# ConvNetJs2 卷積神經網路套件
 
-Language: [English](README.md) | [中文版](chineseReadme.md)
+ConvNetJs2 是延續自 [ConvNetJS](https://github.com/karpathy/convnetjs) 的專案！
 
-ConvNetJs2 is a continuation from [ConvNetJS] (https://github.com/karpathy/convnetjs) project!
-
-[ConvNetJS] is [karpathy] (https://github.com/karpathy), written in JavaScript Convolutional Neural networks (Convolutional Neural Network) suite, mainly adopt the way of the web page, function is complete, it shows the example shown in the table below.
+[ConvNetJS] 是 [karpathy](https://github.com/karpathy) 用 JavaScript 撰寫的卷積神經網路 (Convolutional Neural Network) 套件，主要採用《網頁》的方式執行，功能還算蠻完備的，其展示範例如下表所示。
 
 
-Example | program | description
+範例     | 程式 | 說明 
 --------|-----|--------------------------------
-| [regression. Js] | USES x*sin(x) curve to generate some samples, and then USES CNN to learn the curve that conforms to these samples as far as possible
-For | [classified2d.js], there are two points on the 2-dimensional plane of |. The two points are distinguished as far as possible by CNN network
-The | MNIST digital imaging database can be used to train CNN networks to recognize handwritten Numbers
-| [cifar10predict.js] the | Cifar10 image database contains ten categories of tagged objects that are used to train CNN networks for identification (this example USES pre-trained networks to predict).
+曲線擬合 | [regression.js] | 用 x*sin(x) 曲線產生一些樣本，然後用 CNN 學習出盡可能符合這些樣本的曲線
+二維分類 | [classified2d.js] | 2維平面上有兩種點，用 CNN 網路將兩種點盡可能區分開來
+數字辨識 | [mnistPredict.js] | MNIST 數字影像資料庫可用來訓練 CNN 網路辨識手寫數字
+影像辨識 | [cifar10predict.js] | Cifar10 影像資料庫共有十類標記物件，用來訓練出 CNN 網路進行辨識 (本範例採用預先訓練好的網路來預測)
 
-## Installation
-
+## 安裝方法
 
 ```
-$npm -i convnetjs2
+$ npm i convnetjs2
 ```
 
-Then you may run the following example!
+然後你就可以開始執行下列範例了！
 
-## Examples 
+## 範例 : 曲線擬合
 
-Example: [regression.js] (curve fitting)
+程式： [regression.js]
 
-Run
+執行結果：
 
 ```
 $ node regression
@@ -90,10 +87,11 @@ x=4.1647 label=-3.5555 predict=-3.5837
 x=-1.2591 label=1.1984 predict=1.1957
 ```
 
+## 範例 : 二維分類
 
-Example: [classified2d.js] (two-dimensional classification)
+程式： [classified2d.js]
 
-Run:
+執行結果：
 
 ```
 $ node classified2d
@@ -126,9 +124,11 @@ x=0.8000 y=3.2 label=1 w0=0.0092 w1=0.9908
 x=1.0000 y=-2.2 label=1 w0=0.0297 w1=0.9703
 ```
 
-Example: [mnistPredict js] (MNIST Handwritten digit recognition)
+## 範例 : 數字辨識
 
-Run
+程式： [mnistPredict.js]
+
+執行結果：
 
 ```
 $ node mnistPredict mnist/3.png
@@ -160,10 +160,12 @@ prob = {"sx":1,"sy":1,"depth":10,"w":{"0":0.028692523186077575,"1":5.02205736407
 yhat=4 class=4
 ```
 
-Example: [cifar10predict js] (image recognition)
 
-Run
+## 範例 : 影像辨識
 
+程式： [cifar10predict.js]
+
+執行結果：
 
 ```
 $ node cifar10predict cifar10/horse1.png
